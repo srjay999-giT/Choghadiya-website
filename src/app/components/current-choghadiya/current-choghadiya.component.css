@@ -1,0 +1,26 @@
+.card {
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.current-box {
+  background-color: var(--light-orange);
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+h2 {
+  margin-top: 0;
+  color: var(--text-color);
+}
+
+h3 {
+  margin: 0;
+  font-size: 24px;
+  color: var(--primary-orange);
+}

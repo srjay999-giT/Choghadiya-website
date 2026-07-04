@@ -1,0 +1,16 @@
+.card {
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid var(--border-color);
+}
+
+h2 {
+  margin-top: 0;
+  color: var(--primary-orange);
+}
+
+p {
+  line-height: 1.6;
+}

@@ -1,0 +1,19 @@
+.header-card {
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid var(--border-color);
+}
+
+h1 {
+  margin: 0;
+  color: var(--primary-orange);
+}
+
+p {
+  margin: 10px 0 0 0;
+  color: var(--text-color);
+  font-weight: bold;
+}

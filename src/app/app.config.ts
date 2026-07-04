@@ -1,11 +1,9 @@
-import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/core';
-import { provideRouter } from '@angular/router';
+import { ApplicationConfig } from '@angular/core';
 
-import { routes } from './app.routes';
-
+// This file configures our Angular application.
+// For a beginner project like this, we like to keep it very clean and simple!
 export const appConfig: ApplicationConfig = {
   providers: [
-    provideBrowserGlobalErrorListeners(),
-    provideRouter(routes)
+    // We don't have complex routing or global providers, so this is empty.
   ]
 };

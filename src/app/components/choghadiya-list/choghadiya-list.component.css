@@ -1,0 +1,52 @@
+.lists-container {
+  display: flex;
+  gap: 20px;
+}
+
+/* On mobile phones, stack the day and night columns vertically */
+@media (max-width: 700px) {
+  .lists-container {
+    flex-direction: column;
+  }
+}
+
+.card {
+  flex: 1; /* Makes both columns take equal width */
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid var(--border-color);
+}
+
+h2 {
+  margin-top: 0;
+  color: var(--primary-orange);
+  border-bottom: 2px solid var(--light-orange);
+  padding-bottom: 10px;
+}
+
+.slot-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 10px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.slot-item:last-child {
+  border-bottom: none;
+}
+
+/* Simple hover effect */
+.slot-item:hover {
+  background-color: var(--bg-color);
+  border-radius: 5px;
+}
+
+.time {
+  color: var(--text-color);
+}
+
+.name-meaning {
+  color: var(--primary-orange);
+}

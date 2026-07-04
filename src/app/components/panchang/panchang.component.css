@@ -1,0 +1,33 @@
+.card {
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid var(--border-color);
+}
+
+h2 {
+  margin-top: 0;
+  color: var(--primary-orange);
+  border-bottom: 2px solid var(--light-orange);
+  padding-bottom: 10px;
+}
+
+.panchang-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f9fafb;
+  border-radius: 5px;
+}
+
+/* Simple hover effect */
+.row:hover {
+  background-color: var(--light-orange);
+}

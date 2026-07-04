@@ -1,0 +1,48 @@
+/* 
+  app.css 
+  This file contains the styles for our main application container.
+*/
+
+/* 
+  :host represents the very root of this component.
+  We define our colors here as CSS variables so they can be 
+  shared and reused by all our child components automatically! 
+*/
+:host {
+  --primary-orange: #F97316;
+  --light-orange: #FDBA74;
+  --bg-color: #FFF8F1;
+  --card-bg: #FFFFFF;
+  --text-color: #333333;
+  --border-color: #E5E7EB;
+  
+  display: block;
+  background-color: var(--bg-color);
+  min-height: 100vh; /* Make sure it takes up the full screen height */
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
+  
+  /* Remove default body margin by adding it here or in global styles */
+  margin: -8px; /* Temporary fix for default body margin */
+  padding: 8px;
+}
+
+/* Our main container that holds everything */
+.app-container {
+  max-width: 800px;
+  margin: 0 auto; /* Centers the container on the screen */
+  padding: 20px;
+  
+  /* Flexbox makes it easy to stack items vertically */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adds space between each component (header, panchang, etc) */
+}
+
+/* Make it responsive for mobile phones */
+@media (max-width: 600px) {
+  .app-container {
+    padding: 10px;
+    gap: 15px;
+  }
+}

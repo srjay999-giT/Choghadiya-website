@@ -1,0 +1,26 @@
+<div class="lists-container">
+  
+  <!-- Day Slots Column -->
+  <div class="card">
+    <h2>Day Choghadiya</h2>
+    <!-- We use *ngFor to loop through our array and display each slot -->
+    <div class="slot-item" *ngFor="let slot of daySlots">
+      <div class="time">{{ slot.startTime }} - {{ slot.endTime }}</div>
+      <div class="name-meaning">
+        <strong>{{ slot.name }}</strong> ({{ slot.meaning }})
+      </div>
+    </div>
+  </div>
+
+  <!-- Night Slots Column -->
+  <div class="card">
+    <h2>Night Choghadiya</h2>
+    <div class="slot-item" *ngFor="let slot of nightSlots">
+      <div class="time">{{ slot.startTime }} - {{ slot.endTime }}</div>
+      <div class="name-meaning">
+        <strong>{{ slot.name }}</strong> ({{ slot.meaning }})
+      </div>
+    </div>
+  </div>
+
+</div>
